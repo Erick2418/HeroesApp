@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export const LoginScreen = ({history}) => {
     const handleLogin=()=>{
         /* History permite redireccionar a otra pagina desde una funcion? */
@@ -10,6 +11,7 @@ export const LoginScreen = ({history}) => {
         history.replace('/');
     }
     return (
+        <>
         <div className="container mt-5">
             <h1>Login</h1>
             <hr/>
@@ -20,5 +22,7 @@ export const LoginScreen = ({history}) => {
                 Login
             </button>
         </div>
+        
+        </>
     )
 }
