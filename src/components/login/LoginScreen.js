@@ -1,13 +1,19 @@
-import React from 'react'
-
+import React, { useContext } from 'react'
+import { AuthContext } from '../auth/AuthContext'
+import {types} from '../types/types'
 
 export const LoginScreen = ({history}) => {
+    
+    const {dispatch} = useContext(AuthContext);
+    
     const handleLogin=()=>{
-        /* History permite redireccionar a otra pagina desde una funcion? */
-       // history.push('/');
-        /* Permite que no se vuelva a mostrar el login hasta que le demos a Logout
-        reemplaza el historial, como si no toco el login, si no que se fue a antes de eso
-        */
+
+        dispatch({
+            type: types.login,
+            payload:{
+                name:'Erick'
+            }
+        });
         history.replace('/');
     }
     return (
