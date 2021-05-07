@@ -12,7 +12,7 @@ export const LoginScreen = ({history}) => {
             type: types.login,
             payload:{
                 name:'Erick'
-            }
+               }
         });
         history.replace('/');
     }
