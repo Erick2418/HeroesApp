@@ -1,9 +1,9 @@
 import React, { useMemo } from 'react'
-import { useForm } from '../../hooks/useForm';
+import { useForm } from './../../hooks/useForm';
 
-import { HeroCard } from '../heroes/HeroCard';
+import { HeroCard } from './../heroes/HeroCard';
 import { useLocation } from 'react-router';
-import { getHeroesByName } from '../selectors/getHeroesByName';
+import { getHeroesByName } from './../selectors/getHeroesByName';
 
 export const SearchScreen = ({history}) => {
 

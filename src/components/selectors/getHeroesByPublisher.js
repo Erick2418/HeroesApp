@@ -1,4 +1,4 @@
-import { heroes } from "../data/heroes";
+import { heroes } from "./../data/heroes";
 
 export const getHeroesByPublisher=(publisher)=>{
     /*Filtro para que solo se muestren los de Dc o Marvel.. caso constrario dara error */
