@@ -6,6 +6,8 @@ export const PrivateRoute = ({
     component:Component,
     ...rest
 }) => {
+    /* guardaremos la ultima ruta en el local storage usando el location */
+    localStorage.setItem('lastPath',rest.location.pathname )
     return (
         <Route {...rest}
              component={ (props)=>(

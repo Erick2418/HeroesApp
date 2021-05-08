@@ -11,7 +11,7 @@ import { PublicRoute } from "./PublicRoute"
 export const AppRouter = () => {
 
     const {user} = useContext(AuthContext)
-    console.log(user)
+
     return (
         <Router>
         <div>
